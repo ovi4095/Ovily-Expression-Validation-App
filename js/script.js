@@ -46,10 +46,10 @@ collapsibles.forEach((items) => {
     function checkRegularExpression(value, reg_exp) {
 
         let input = document.querySelector(`#readOnlyInput-${value}`);
-        let emailAddress = input.value; 
+        let input_value = input.value; 
         let regularExpression = reg_exp;
         let msg = document.querySelector(`#${value}-msg`);
-            if(regularExpression.test(emailAddress) == true) {
+            if(regularExpression.test(input_value) == true) {
                 input.className ="form-control input-size is-valid"
                 msg.className = "msg msg_valid";
                 msg.innerHTML="Valid";
