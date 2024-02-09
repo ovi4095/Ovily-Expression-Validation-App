@@ -12,31 +12,44 @@
     <header class="navbar navbar-expand-lg bg-dark nav">
       <h2>Ovily Expression Validator</h2>
     </header>
+
     <div class="container container-style">
-      <div class="collapsible collapsible--expanded">
+      <!-- Email -->
+      <div class="collapsible">
         <header class="collapsible__header">
           <h2>Email Validation</h2>
           <img class="collaps-btn" src="images/down.png" alt="" />
         </header>
         <div class="collapsible__content">
           <div class="form-group">
-            <fieldset>
+            <form id="email-input">
               <label class="form-label mt-4 font" for="readOnlyInput"
                 >Input Email Address</label
               >
               <input
                 class="form-control input-size"
-                id="readOnlyInput"
+                id="readOnlyInput-email"
                 type="text"
                 placeholder="example@mail.domain..."
               />
-            </fieldset>
+              <p id="email-msg" class="msg"></p>
+              <button
+                type="submit"
+                class="btn btn-primary btn-lg btn-decoration"
+              >
+                Submint
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-lg btn-decoration btn-clear clear-email"
+              >
+                Clear
+              </button>
+            </form>
           </div>
-          <button type="submit" class="btn btn-primary btn-lg btn-decoration">
-            Submint
-          </button>
         </div>
       </div>
+      <!-- Number -->
       <div class="collapsible collapsible--expanded">
         <header class="collapsible__header">
           <h2>Phone Number Validation</h2>
@@ -44,23 +57,34 @@
         </header>
         <div class="collapsible__content">
           <div class="form-group">
-            <fieldset>
+            <form id="number-input">
               <label class="form-label mt-4 font" for="readOnlyInput"
                 >Input Phone Number</label
               >
               <input
                 class="form-control input-size"
-                id="readOnlyInput"
+                id="readOnlyInput-number"
                 type="text"
                 placeholder="+8801XXXXXXXXX"
               />
-            </fieldset>
+              <p id="number-msg" class="msg"></p>
+              <button
+                type="submit"
+                class="btn btn-primary btn-lg btn-decoration"
+              >
+                Submint
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-lg btn-decoration btn-clear clear-number"
+              >
+                Clear
+              </button>
+            </form>
           </div>
-          <button type="submit" class="btn btn-primary btn-lg btn-decoration">
-            Submint
-          </button>
         </div>
       </div>
+      <!-- Post Code -->
       <div class="collapsible collapsible--expanded">
         <header class="collapsible__header">
           <h2>Post Code Validation</h2>
@@ -68,21 +92,31 @@
         </header>
         <div class="collapsible__content">
           <div class="form-group">
-            <fieldset>
+            <form id="post_code-input">
               <label class="form-label mt-4 font" for="readOnlyInput"
                 >Input Post Code</label
               >
               <input
                 class="form-control input-size"
-                id="readOnlyInput"
+                id="readOnlyInput-post_code"
                 type="text"
                 placeholder="Example(1234)..."
               />
-            </fieldset>
+              <p id="post_code-msg" class="msg"></p>
+              <button
+                type="submit"
+                class="btn btn-primary btn-lg btn-decoration"
+              >
+                Submint
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-lg btn-decoration btn-clear clear-post_code"
+              >
+                Clear
+              </button>
+            </form>
           </div>
-          <button type="submit" class="btn btn-primary btn-lg btn-decoration">
-            Submint
-          </button>
         </div>
       </div>
     </div>

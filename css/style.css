@@ -1,9 +1,6 @@
 :root {
     --color-primary: #f4f4f4; 
     --color-secondary: #373A3C;
-    --color-card-head: #13afad; 
-    --color-accent: #cc5e42;
-    --color-HeaderFooter: #08d3d0; 
 } 
 html {
     font-size: 50.5%;
@@ -43,10 +40,22 @@ input::placeholder {
     padding: 2rem;
     border-radius: 5px;
 }
-
+/* button */
 .btn-decoration {
     font-size: 2.5rem;
     border-radius: 5px;
+    padding: 1rem 2rem;
+}
+.btn-clear {
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    background: #f4f4f4;
+    color: #373A3C;
+}
+.btn-clear:hover {
+    background: #c6c6c6;
+    color: #373A3C;
+    transition: all 0.2s;
 }
 /* Nav */
 .nav {
@@ -119,11 +128,26 @@ input::placeholder {
     text-align: center;
 
 }
-
-
+/* Message */
+.msg {
+    font-size: 2rem;
+    margin-left: 1rem;
+    transition: all 0.2s;
+}
+.msg_valid {
+    color: rgb(93, 213, 93);
+}
+.msg_invalid {
+    color: #c22e2e;
+}
 @media screen and (min-width: 750px) {
     .container-style {
         border-radius: 15px;
+    }
+    .btn-clear {
+        display: flexbox;
+        margin-right: 9.5%;
+        float: right;
     }
     .nav h2 {
         font-size: 3rem;
